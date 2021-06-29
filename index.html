@@ -1,1 +1,78 @@
-test
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <a id="logo" href="#"><img src="img/logo/Reservia.png" alt="Reservia"></a>
+                <div id="navButtonsContainer">
+                    <a class="navBtn" href="#">Hébergement</a>
+                    <a class="navBtn" href="#">Activités</a>
+                    <a class="navBtn" id="signinBtn" href="#">S'inscrire</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h2>En plein centre ville ou en pleine nature</h2>
+
+            <div id="SearchBar">
+                <form action="" method="GET">
+                    <label for="location">Loupe</label>
+                    <input type="text" name="location" id="location" placeholder="Marseille, France">
+                    <input type="submit" value="Rechercher">
+                </form>
+                <div id="SearchFilters">
+                    <label>Filtres</label>
+                    <a class="filterBtn" href="#">Economique</a>
+                    <a class="filterBtn" href="#">Famillial</a>
+                    <a class="filterBtn" href="#">Romantique</a>
+                    <a class="filterBtn" href="#">Animaux autorisés</a>
+                </div>
+            </div>
+
+            <section id="lodgingResults">
+                <span>Plus de 500 logements sont disponibles dans cette ville</span>
+                <article id="locationLodging"></article>
+                <aside id="MostPopular"></aside>
+            </section>
+
+            <section id="activitiesResults">
+
+            </section>
+
+
+        </main>
+
+        <footer>
+            <div class="footerContainer">
+                <ul>
+                    <label>A propos</label>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footerContainer">
+                <ul>
+                    <label>Nos hébergements</label>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="footerContainer">
+                <ul>
+                    <label>Assitance</label>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+</html>

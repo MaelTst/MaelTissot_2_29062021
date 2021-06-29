@@ -1,0 +1,50 @@
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+nav {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+}
+
+#logo img {
+    max-width: 94px;
+}
+
+#navButtonsContainer {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.navBtn {
+    padding: 2rem;
+    text-decoration: none;
+}
+
+#signinBtn {
+    color: #0065FC;
+}
+
+main {
+    max-width: 1440px;
+    margin: auto;
+}
+
+
+footer {
+    max-width: 1440px;
+    margin: auto;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerContainer {
+    width: 33.3%;
+}
