@@ -4,6 +4,11 @@
     scroll-behavior: smooth;
 }
 
+
+a:link, a:visited, a:active {
+    color: #000000;
+}
+
 h1 {
     font-size: 22px;
     font-weight: 700;
@@ -11,8 +16,20 @@ h1 {
     margin-bottom: 0px;
 }
 
+h2 {
+    font-size: 1.35em;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
 p {
-    margin-top: 8px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-size: 0.9em;
 }
 
 body {
@@ -142,6 +159,9 @@ main {
     border-radius: 15px;
     color:#0065FC;
 }
+.fa-star3, .fa-star4, .fa-star5  {
+    font-size: 0.75em;
+}
 
 .fa-star3:before {
     content: "\f005\f005\f005";
@@ -173,11 +193,11 @@ main {
 }
 
 #locationLodging {
-    width: 830px;
-    height: 576px;
+    width: 800px;
+    height: 546px;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 25px;
+    padding: 40px;
     display: inline-flex;
     flex-direction: column;
 }
@@ -189,7 +209,7 @@ main {
 }
 
 .lodgingPreview {
-    margin: 15px;
+    margin: 15px 0px 15px 0px;
     width: 236px;
     height: 189px;
     border: 5px solid #FFFFFF;
@@ -209,19 +229,25 @@ main {
     object-fit: cover;
 }
 
+.lodgingPreviewDesc {
+    padding: 5px 0px 0px 10px;
+}
+
 #lodgingMore {
     display: block;
-    margin: 15px;
+    margin: 25px 15px 15px 15px;
+    font-size: 1.15em;
+    font-weight: 700;
 }
 
 #mostPopular {
     display: inline-flex;
     flex-direction: column;
-    width: 370px;
-    height: 576px;
+    width: 343px;
+    height: 546px;
     border-radius: 20px;
     background-color: #f2f2f2;
-    padding: 25px;
+    padding: 40px 40px 40px 37px;
     margin-left: 35px;
 
 }
@@ -233,14 +259,19 @@ main {
     justify-content: space-between;
 }
 
+.fa-line-chart {
+    font-size: 1.5em;
+}
+
 #popularContainer {
     display: flex;
     justify-content: space-between;
     flex-flow: column wrap;
+    margin-top: 2px;
 }
 
 .popularPreview {
-    margin: 15px;
+    margin: 15px 0px 15px 0px;
     /* width: 127px; */
     height: 134px;
     border: 5px solid #FFFFFF;
@@ -263,6 +294,10 @@ main {
     height: 100%;
     border-radius: 20px 0 0 20px;
     object-fit: cover;
+}
+
+.popularPreviewDesc {
+    padding: 15px;
 }
 
 #activitiesContainer {
