@@ -11,17 +11,18 @@ a:link, a:visited {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 h1 {
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 700;
     margin-top: 9px;
     margin-bottom: 0px;
 }
 
 h2 {
-    font-size: 1.35em;
+    font-size: 1.375em;
     margin: 0;
 }
 
@@ -122,12 +123,24 @@ main {
     border-radius: 0px 15px 15px 0px;
     color: #FFFFFF;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background-color .3s;
+}
+
+#submitForm:hover {
+    background-color: #65a2ff;
 }
 
 #searchFilters {
     display: flex;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+#searchFilters label {
+    font-weight: 700;
 }
 
 .filterBtn {
@@ -137,6 +150,16 @@ main {
     align-items: center;
     border-radius: 50px;
     margin-left: 20px;
+    transition: background-color .3s;
+}
+
+.filterBtn:hover {
+    background-color: #DEEBFF;
+}
+
+.filterBtn:hover .filterLabel {
+    background-color: #0065FC;
+    color: #DEEBFF;
 }
 
 .filterLabel {
@@ -146,11 +169,12 @@ main {
     border-radius: 50px;
     cursor: pointer;
     color: #0065FC;
-    font-size: 15px;
+    font-size: 1.2em;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: -2px;
+    transition: background-color .3s, color .3s;
 }
 
 .filterBtn span {
@@ -205,7 +229,9 @@ main {
 }
 
 #lodging {
-    margin-top: 35px;
+    margin-top: 37px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #locationLodging {
@@ -216,13 +242,13 @@ main {
     padding: 40px;
     display: inline-flex;
     flex-direction: column;
-    margin-top: 37px;
 }
 
 #lodgingContainer {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
+    margin-top: 8px;
 }
 
 .lodgingPreview {
@@ -265,9 +291,6 @@ main {
     border-radius: 20px;
     background-color: #f2f2f2;
     padding: 40px 40px 40px 37px;
-    margin-left: 35px;
-    margin-top: 37px;
-
 }
 
 #mostPopularTitle {
@@ -285,7 +308,7 @@ main {
     display: flex;
     justify-content: space-between;
     flex-flow: column wrap;
-    margin-top: 2px;
+    margin-top: 10px;
 }
 
 .popularPreview {
@@ -315,8 +338,14 @@ main {
 }
 
 .popularPreviewDesc {
-    padding: 15px;
+    padding: 15px 15px 10px 15px;
     width: 176px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popularPreviewDesc p {
+    flex-grow: 1;
 }
 
 #activities {
@@ -386,7 +415,7 @@ main {
 }
 
 .activitiesPic img, .lodgingPic img, .popularPic img {
-    transition: transform .5s ease;
+    transition: transform .5s;
 }
 
 .picOverflow {
