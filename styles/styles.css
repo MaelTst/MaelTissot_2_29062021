@@ -5,8 +5,12 @@
 }
 
 
-a:link, a:visited, a:active {
+a:link, a:visited {
     color: #000000;
+}
+
+ul {
+    list-style: none;
 }
 
 h1 {
@@ -24,6 +28,10 @@ h2 {
 h3 {
     margin: 0;
     font-size: 1em;
+}
+
+h4 {
+    font-size: 1.1em;
 }
 
 p {
@@ -68,7 +76,7 @@ nav {
 .active, .navBtn:hover {
     border-top: 2px solid #0065FC;
     padding-top: 48px !important;
-    color: #0065FC;
+    color: #0065FC !important;
 }
 
 #signinBtn {
@@ -84,6 +92,7 @@ main {
 
 #searchForm {
     display: flex;
+    margin-top: 17px;
 }
 
 #searchLabel {
@@ -118,7 +127,7 @@ main {
 #searchFilters {
     display: flex;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .filterBtn {
@@ -150,14 +159,16 @@ main {
 }
 
 .searchIconResult {
-    width: 30px;
-    height: 30px;
+    width: 22px;
+    height: 22px;
     border: 1px solid #f2f2f2;
     display: inline-flex !important;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
     color:#0065FC;
+    font-size: 0.75em;
+    margin-right: 12px;
 }
 .fa-star3, .fa-star4, .fa-star5  {
     font-size: 0.75em;
@@ -170,7 +181,7 @@ main {
 
 .fa-star3:after {
     content: "\f005\f005";
-    color: #DEEBFF;
+    color: #d9d9d9;
 }
 
 .fa-star4:before {
@@ -180,7 +191,7 @@ main {
 
 .fa-star4:after {
     content: "\f005";
-    color: #DEEBFF;
+    color: #d9d9d9;
 }
 
 .fa-star5:before {
@@ -189,7 +200,12 @@ main {
 }
 
 #lodging span {
-    display: block;
+    display: flex;
+    align-items: center;
+}
+
+#lodging {
+    margin-top: 35px;
 }
 
 #locationLodging {
@@ -200,6 +216,7 @@ main {
     padding: 40px;
     display: inline-flex;
     flex-direction: column;
+    margin-top: 37px;
 }
 
 #lodgingContainer {
@@ -215,7 +232,7 @@ main {
     border: 5px solid #FFFFFF;
     border-radius: 20px;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 15px #0000000a;
+    box-shadow: 0px 0px 15px #e3e3e3;
 }
 
 .lodgingPic {
@@ -230,7 +247,7 @@ main {
 }
 
 .lodgingPreviewDesc {
-    padding: 5px 0px 0px 10px;
+    padding: 10px 0px 0px 10px;
 }
 
 #lodgingMore {
@@ -249,6 +266,7 @@ main {
     background-color: #f2f2f2;
     padding: 40px 40px 40px 37px;
     margin-left: 35px;
+    margin-top: 37px;
 
 }
 
@@ -277,7 +295,7 @@ main {
     border: 5px solid #FFFFFF;
     border-radius: 20px;
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 15px #0000000a;
+    box-shadow: 0px 0px 15px #e3e3e3;
     display: flex;
     flex-direction: row;
 }
@@ -298,6 +316,11 @@ main {
 
 .popularPreviewDesc {
     padding: 15px;
+    width: 176px;
+}
+
+#activities {
+    margin-top: 60px;
 }
 
 #activitiesContainer {
@@ -305,11 +328,13 @@ main {
     flex-flow: column wrap;
     height: 445px;
     justify-content: space-between;
+    align-content: space-between;
+    margin-top: 22px;
 }
 
 .activitiesPreview{
     width: 302px;
-    box-shadow: 0px 0px 15px #0000001f;
+    box-shadow: 0px 0px 15px #e6e6e6;
     border-radius: 20px 20px 20px 20px;
 }
 
@@ -321,25 +346,66 @@ main {
     height: 100%;
 }
 
-.activitiesPic.Large img {
+.activitiesPic.xLarge img {
     width: 302px;
     height: 390px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
-.activitiesPic.Medium img {
+.activitiesPic.Large img {
     width: 302px;
     height: 180px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
+.activitiesPic.Medium img {
+    width: 302px;
+    height: 153px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
 .activitiesPic.Small img {
+    width: 302px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activitiesPic.xSmall img {
     width: 302px;
     height: 110px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
+}
+
+.activitiesPic:hover img, .lodgingPic:hover img, .popularPic:hover img {
+    transform: scale(1.2);
+}
+
+.activitiesPic img, .lodgingPic img, .popularPic img {
+    transition: transform .5s ease;
+}
+
+.picOverflow {
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+}
+
+.popularPicOverflow {
+    overflow: hidden;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+}
+
+.activitiesPreviewDesc {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
 }
 
 footer {
@@ -347,9 +413,19 @@ footer {
     background-color: #F2F2F2;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .footerContainer {
     width: 446.6px;
+    height: 196px;
+    padding-top: 22px;
+}
+
+.footerLinks {
+    padding-bottom: 10px;
+}
+
+.footerLinks a:hover {
+    text-decoration: underline;
 }
