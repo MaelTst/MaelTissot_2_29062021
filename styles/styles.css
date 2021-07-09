@@ -134,6 +134,10 @@ main {
     background-color: #65a2ff;
 }
 
+.fa-search {
+    display: none !important;
+}
+
 #searchFilters {
     display: flex;
     flex-flow: row wrap;
@@ -521,7 +525,11 @@ footer {
 
     .activitiesPreview {
         width: 31%;
-        margin-bottom: 3%;
+        margin-bottom: 30px;
+    }
+
+    .footerContainer {
+        width: 30%;
     }
 
 }
@@ -545,7 +553,7 @@ footer {
     }
 
     .lodgingPreview {
-        width: 100%;
+        width: 45.5%;
     }
 }
 
@@ -593,6 +601,26 @@ footer {
         padding: 20px 34px 20px 34px;;
     }
 
+    #location {
+        width: 150px;
+        flex-grow: 1;
+    }
+
+    #submitForm {
+        width: 52px;
+        height: 52px;
+        border-radius: 15px 15px 15px 15px;
+        margin-left: -15px;
+    }
+
+    #submitForm span {
+        display: none;
+    }
+
+    .fa-search {
+        display: inline-block !important;
+    }
+
     #mostPopular {
         border-radius: 0;
     }
@@ -601,4 +629,25 @@ footer {
         background-color: transparent;
     }
 
+    .lodgingPreview {
+        width: 100%;
+    }
+
+    #locationActivities {
+        padding: 40px;
+    }
+
+    .activitiesPreview {
+        width: 100%;
+    }
+
+    footer {
+        flex-flow: column;
+    }
+
+    .footerContainer {
+        width: auto;
+        padding-left: 50px;
+    }
+    
  }
