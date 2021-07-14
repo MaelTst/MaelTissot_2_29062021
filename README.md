@@ -17,7 +17,7 @@ L'objectif de ce projet est d'intégrer la maquette prototype du site Reservia, 
 
 # Ressources et indications fournies
 * Maquettes Desktop et Mobile.
-* Images de la maquette en format Small, Medium, Large et xLarge.
+* Logo et images de la maquette en format Small, Medium, Large et xLarge.
 * Couleurs primaire (`#0065FC`), secondaire (`#DEEBFF`) et tertiaire (`#F2F2F2`) de la charte graphique.
 * Police du site ([Raleway](https://fonts.google.com/specimen/Raleway)).
 
