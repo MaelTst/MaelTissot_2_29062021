@@ -3,7 +3,7 @@
 # Objectif
 L'objectif de ce projet est d'intégrer la maquette prototype du site Reservia, un outil de planification de vacances permettant aux utilisateurs de rechercher les hébergements et activités disponibles dans la ville de leur choix. Les maquettes Desktop et Mobile sont fournies, l'affichage tablette doit également être pris en charge, sur ce support l'adaptation est libre. 
 
-# Spécificités et contraintes techniques
+# Spécificités attendues et contraintes techniques
 * Le champ de recherche doit être éditable.
 * Les cartes d'hébergement et d'activité doivent être cliquables dans leur intégralité.
 * Les filtres doivent changer d'apparence au survol.
