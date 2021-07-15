@@ -1,12 +1,17 @@
+:root {
+    --primary-color: #0065FC;
+    --secondary-color: #DEEBFF;
+    --tertiary-color: #F2F2F2;
+}
+
 * {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
 }
 
-
 a:link, a:visited {
-    color: #000000;
+    color: black;
 }
 
 ul {
@@ -69,21 +74,19 @@ nav {
 }
 
 .navBtn {
-    padding: 50px 34px 50px 34px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    padding: 48px 34px 50px 34px;
     font-weight: 600;
+    border-top: 2px solid transparent;
+    transition: all .2s;
 }
 
-.active, #navButtonsContainer a:hover {
-    border-top: 2px solid #0065FC;
-    padding-top: 48px;
-    color: #0065FC !important;
+#navButtonsContainer a:hover {
+    border-top: 2px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 #signinBtn {
-    color: #0065FC;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -101,7 +104,7 @@ main {
 #searchLabel {
     min-width: 52px;
     height: 51px;
-    background-color: #f2f2f2;
+    background-color: var(--tertiary-color);
     border-radius: 15px 0px 0px 15px;
     display: flex;
     align-items: center;
@@ -110,8 +113,8 @@ main {
 
 #location {
     width: 234px;
-    border-top: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid var(--tertiary-color);
+    border-bottom: 1px solid var(--tertiary-color);
     border-left: none;
     border-right: none;
     padding: 17px;
@@ -121,21 +124,21 @@ main {
 #submitForm {
     width: 134px;
     border: none;
-    background-color: #0065FC;
+    background-color: var(--primary-color);
     border-radius: 0px 15px 15px 0px;
-    color: #FFFFFF;
+    color: white;
     cursor: pointer;
     font-weight: 600;
     font-size: 1em;
-    transition: background-color .3s;
+    transition: background-color .2s;
 }
 
 #submitForm:hover {
     background-color: #65a2ff;
 }
 
-.fa-search {
-    display: none !important;
+#submitForm .fa-search {
+    display: none;
 }
 
 #searchFilters {
@@ -152,36 +155,36 @@ main {
 
 .filterBtn {
     height: 46px;
-    border: 2px solid #f2f2f2;
+    border: 2px solid var(--tertiary-color);
     display: inline-flex;
     align-items: center;
     border-radius: 50px;
     margin-left: 20px;
-    transition: background-color .3s;
+    transition: background-color .2s;
 }
 
 .filterBtn:hover {
-    background-color: #DEEBFF;
+    background-color: var(--secondary-color);
 }
 
 .filterBtn:hover .filterLabel {
-    background-color: #0065FC;
-    color: #DEEBFF;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .filterLabel {
     min-height: 50px;
     min-width: 50px;
-    background-color: #DEEBFF;
+    background-color: var(--secondary-color);
     border-radius: 50px;
     cursor: pointer;
-    color: #0065FC;
+    color: var(--primary-color);
     font-size: 1.2em;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: -2px;
-    transition: background-color .3s, color .3s;
+    transition: all .2s;
 }
 
 .filterBtn span {
@@ -189,15 +192,19 @@ main {
     font-weight: 600;
 }
 
-.searchIconResult {
+.searchResult {
+    display: flex;
+}
+
+.searchResult .searchIconResult {
     width: 22px;
     height: 22px;
-    border: 1px solid #f2f2f2;
-    display: inline-flex !important;
+    border: 1px solid var(--tertiary-color);
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    color:#0065FC;
+    color:var(--primary-color);
     font-size: 0.75em;
     margin-right: 12px;
 }
@@ -207,7 +214,7 @@ main {
 
 .fa-star3:before {
     content: "\f005\f005\f005";
-    color: #0065FC;
+    color: var(--primary-color);
 }
 
 .fa-star3:after {
@@ -217,7 +224,7 @@ main {
 
 .fa-star4:before {
     content: "\f005\f005\f005\f005";
-    color: #0065FC;
+    color: var(--primary-color);
 }
 
 .fa-star4:after {
@@ -227,7 +234,7 @@ main {
 
 .fa-star5:before {
     content: "\f005\f005\f005\f005\f005";
-    color: #0065FC;
+    color: var(--primary-color);
 }
 
 #lodging span {
@@ -244,9 +251,9 @@ main {
 #locationLodging {
     width: 800px;
     height: 546px;
-    background-color: #f2f2f2;
+    background-color: var(--tertiary-color);
     border-radius: 20px;
-    padding: 40px;
+    padding: 40px 40px 40px 40px;
     display: inline-flex;
     flex-direction: column;
 }
@@ -262,9 +269,9 @@ main {
     margin: 15px 0px 15px 0px;
     width: 236px;
     height: 189px;
-    border: 5px solid #FFFFFF;
+    border: 5px solid white;
     border-radius: 20px;
-    background-color: #FFFFFF;
+    background-color: white;
     box-shadow: 0px 0px 15px #e3e3e3;
 }
 
@@ -297,7 +304,7 @@ main {
     width: 343px;
     height: 546px;
     border-radius: 20px;
-    background-color: #f2f2f2;
+    background-color: var(--tertiary-color);
     padding: 40px 40px 40px 37px;
 }
 
@@ -322,9 +329,9 @@ main {
 .popularPreview {
     margin: 15px 0px 15px 0px;
     height: 134px;
-    border: 5px solid #FFFFFF;
+    border: 5px solid white;
     border-radius: 20px;
-    background-color: #FFFFFF;
+    background-color: white;
     box-shadow: 0px 0px 15px #e3e3e3;
     display: flex;
     flex-direction: row;
@@ -386,39 +393,30 @@ main {
     height: 100%;
 }
 
-.activitiesPic.xLarge img {
+.activitiesPic img {
     width: 302px;
-    height: 390px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
+}
+
+.activitiesPic.xLarge img {
+    height: 390px;
 }
 
 .activitiesPic.Large img {
-    width: 302px;
     height: 180px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
 .activitiesPic.Medium img {
-    width: 302px;
     height: 153px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
 .activitiesPic.Small img {
-    width: 302px;
     height: 140px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
 .activitiesPic.xSmall img {
-    width: 302px;
     height: 110px;
-    object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
 }
 
 .activitiesPic:hover img, .lodgingPic:hover img, .popularPic:hover img {
@@ -450,7 +448,7 @@ main {
 
 footer {
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: var(--tertiary-color);
     display: flex;
     justify-content: center;
     margin-top: 60px;
@@ -466,7 +464,7 @@ footer {
     padding-bottom: 10px;
 }
 
-.footerLinks a:hover {
+.footerLinks a:hover, #lodgingMore a:hover {
     text-decoration: underline;
 }
 
@@ -542,6 +540,8 @@ footer {
 
     .filterBtn {
         margin-top: 15px;
+        margin-left: 0px;
+        margin-right: 20px;
     }
     
     #popularContainer {
@@ -564,7 +564,11 @@ footer {
     }
 
     #searchBar {
-        padding: 0px 50px 0px 50px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    #searchForm {
+        margin-top: 37px;
     }
 
     #navButtonsContainer {
@@ -587,18 +591,19 @@ footer {
         padding-top: 5px;
     }
 
-    .active, #navButtonsContainer a:hover {
-        border-bottom: 2px solid #0065FC !important;
+    #navButtonsContainer a:hover {
+        border-bottom: 2px solid var(--primary-color);
         border-top: none;
         padding-top: 20px;
     }
 
     #navButtonsContainer a {
-        border-bottom: 2px solid #f2f2f2;
+        border-bottom: 2px solid var(--tertiary-color);
     }
 
     .navBtn {
-        padding: 20px 34px 20px 34px;;
+        padding: 20px 34px 20px 34px;
+        border-top: none;
     }
 
     #location {
@@ -617,24 +622,31 @@ footer {
         display: none;
     }
 
-    .fa-search {
-        display: inline-block !important;
+    #submitForm .fa-search {
+        display: inline-block;
     }
 
     #mostPopular {
         border-radius: 0;
+        padding: 40px 20px 40px 20px;
     }
 
     #locationLodging {
         background-color: transparent;
+        padding: 40px 20px 0px 20px;
+        margin-top: 0px;
     }
 
     .lodgingPreview {
         width: 100%;
     }
 
+    #activities {
+        margin-top: 0px;
+    }
+
     #locationActivities {
-        padding: 40px;
+        padding: 40px 20px 0px 20px;
     }
 
     .activitiesPreview {
@@ -643,10 +655,12 @@ footer {
 
     footer {
         flex-flow: column;
+        margin-top: 20px;
     }
 
     .footerContainer {
         width: auto;
+        height: auto;
         padding-left: 50px;
     }
     
