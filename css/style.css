@@ -282,7 +282,7 @@ main {
 .lodgingPic img {
     width: 100%;
     height: 114px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 
@@ -322,7 +322,7 @@ main {
 #popularContainer {
     display: flex;
     justify-content: space-between;
-    flex-flow: column wrap;
+    flex-flow: column;
     margin-top: 10px;
 }
 
@@ -351,7 +351,7 @@ main {
 .popularPic img {
     width: 127px;
     height: 100%;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
     object-fit: cover;
 }
 
@@ -382,7 +382,7 @@ main {
 .activitiesPreview{
     width: 302px;
     box-shadow: 0px 0px 15px #e6e6e6;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .activitiesPic {
@@ -396,7 +396,7 @@ main {
 .activitiesPic img {
     width: 302px;
     object-fit: cover;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .activitiesPic.xLarge img {
@@ -429,13 +429,13 @@ main {
 
 .picOverflow {
     overflow: hidden;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
     display: flex;
 }
 
 .popularPicOverflow {
     overflow: hidden;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 15px 0px 0px 15px;
     display: flex;
 }
 
