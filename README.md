@@ -22,6 +22,6 @@ L'objectif de ce projet est d'intégrer la maquette prototype du site Reservia, 
 * Police du site ([Raleway](https://fonts.google.com/specimen/Raleway)).
 
 # Environnement et langages
-* Visual Code Studio
+* Visual Studio Code
 * HTML
 * CSS
